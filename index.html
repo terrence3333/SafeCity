@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeCity — Report Local Incidents</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="SafeCity Logo" class="logo" />
+    <h1>SafeCity</h1>
+    <p>Report and view local safety incidents in real-time.</p>
+  </header>
+
+  <main>
+    <section id="report-form">
+      <h2>Report an Incident</h2>
+      <form id="incidentForm">
+        <input type="text" id="title" placeholder="Incident title" required />
+        <textarea id="description" placeholder="Describe what happened" required></textarea>
+        <input type="text" id="location" placeholder="Location" required />
+        <button type="submit">Submit Report</button>
+      </form>
+    </section>
+
+    <section id="incident-list">
+      <h2>Recent Reports</h2>
+      <ul id="reports"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SafeCity. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
